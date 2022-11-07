@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var games = new List<string>() { "osrs", "mw2", "elden ring", "LoL", "WoW"};
+
+            games.OrderBy(x => x.Length).ToList().ForEach(x => Console.WriteLine(x));
         }
     }
 }
